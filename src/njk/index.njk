@@ -6,17 +6,26 @@
 
 {% block content %}
 <div class="container">
-  <h1>Main headline here</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in facilisis velit, aliquam congue dui. Mauris id mi quam. Nam enim leo, bibendum vel efficitur id, elementum malesuada est. Pellentesque interdum tempus eros nec iaculis. Quisque ac est dictum, vehicula nulla quis, condimentum dui.</p>
-  <h2>Library books loop</h2>
-  <p>This loops through data that came from a Google Docs example.</p>
+  <h1>Queen: The British Band that Rocked the World</h1>
+  <p>Give description of the band right here</p>
+  <h2>Band Members</h2>
+  <p>Here are the most important band members of Queen!</p>
   <div class="row">
-    {% for book in library.books %}
-      <div class="col">
-        <img src="img/{{ book.slug }}.jpg" alt="" class="img-fluid">
-        <h3><a href="books/{{ book.slug }}.html">{{ book.title }}</a></h3>
+    {% for member in members.members %}
+    <div class="col-md-8 offset-md-2">
+      <div class="col-sm-8 col-md-9 col-lg-10">
+        <div class="card mb-4 bg-light border-dark">
+          <div class="card-body">
+            <h5 class="card-title">{{ member.name }}
+            <h6 class="card-date">{{ member.tenure }}
+              <img src="../img/member.slug.jpg">
+            <a href="members/{{ member.slug }}.html" class="link" target="_blank">Read 
+            More</a>
+          </div>
+        </div>
       </div>
-    {% endfor %}
+    </div>
+      {% endfor %}
   </div>
   <h2>Bookstores loop</h2>
   <p>This loops through data that came from a Google Sheet example.</p>
