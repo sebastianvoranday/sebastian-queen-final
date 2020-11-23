@@ -2,15 +2,15 @@
 {% set relative_path = "../" %}
 {% from '_macros/prose.njk' import prose %}
 
-{% block page_title %}{{ headline }}{% endblock %}
+{% block page_title %}Queen | {{ name }}{% endblock %}
 
-{% block page_description %}{{ headline }} by Capt. Crit McGillicutty{% endblock %}
+{% block page_description %}{{ name }} {% endblock %}
 
 {% block content %}
   <article class="container">
     <div class="row">
       <div class="col-sm-4">
-        <img src="{{ image }}" alt=" {{ name }} " class="img-fluid">
+        <img src="../img/{{ member.image }}" alt=" {{ name }} " class="img-fluid">
         <p class="byline"> {{ name }}<br>
         <span>Tenure: {{ tenure }}</span></p>
         <span>Instruments: {{ instruments }}</span></p>
@@ -19,9 +19,9 @@
         <hr class="d-sm-none">
       </div>
       <div class="col-sm-8">
-        <img src="../img/{{ image }}" alt="" class="img-fluid mb-4">
-        <h1>{{ headline }}</h1>
-        {{ prose(post) }}
+        <img src="../img/{{ member.imagebw }}" alt="" class="img-fluid mb-4">
+        <h1>{{ name }}</h1>
+        <p class="bio">{{ description | safe }}</p>
       </div>
     </div>
   </article>
