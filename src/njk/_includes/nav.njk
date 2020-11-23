@@ -10,8 +10,8 @@
           Band Members
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          {% for book in library.books %}
-          <a class="dropdown-item" href="{{ relative_path }}books/{{ book.slug}}.html">{{ book.title }}</a>
+          {% for member in members.members %}
+          <a class="dropdown-item" href="members/{{ member.slug }}.html" class="link" target="_blank">{{ member.name }}</a>
           {% endfor %}
         </div>
       </li>
