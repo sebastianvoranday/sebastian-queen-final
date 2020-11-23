@@ -10,9 +10,12 @@
   <article class="container">
     <div class="row">
       <div class="col-sm-4">
-        <img src="../img/bandmember.jpg" alt="band member" class="img-fluid">
-        <p class="byline">By Crit McGillicutty<br>
-        <span>Island Breeze Tribune</span></p>
+        <img src="{{ image }}" alt=" {{ name }} " class="img-fluid">
+        <p class="byline"> {{ name }}<br>
+        <span>Tenure: {{ tenure }}</span></p>
+        <span>Instruments: {{ instruments }}</span></p>
+        <span>Birthplace: {{ birthplace }}</span></p>
+        <span>Birthdate: {{ birthdate }}</span></p>
         <hr class="d-sm-none">
       </div>
       <div class="col-sm-8">
