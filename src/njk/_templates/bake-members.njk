@@ -10,17 +10,17 @@
   <article class="container">
     <div class="row">
       <div class="col-sm-4">
-        <img src="../img/{{ member.image }}" alt=" {{ name }} " class="img-fluid">
-        <p class="byline"> {{ name }}<br>
-        <span>Tenure: {{ tenure }}</span></p>
-        <span>Instruments: {{ instruments }}</span></p>
-        <span>Birthplace: {{ birthplace }}</span></p>
-        <span>Birthdate: {{ birthdate }}</span></p>
+       <img src="../img/{{ image }}" alt="{{ member.name }}" style="float:top;width:250x;height:300px;"/>
+        <p class="byline"> <i><b> {{ name }} in action</i></b> <br>
+        <span><b>Tenure:</b> {{ tenure }}</span></p>
+        <span><b>Instruments:</b> {{ instruments }}</span></p>
+        <span><b>Birthplace:</b> {{ birthplace }}</span></p>
+        <span><b>Birthdate:</b> {{ birthdate }}</span></p>
         <hr class="d-sm-none">
       </div>
-      <div class="col-sm-8">
+      <div class="col-md-7">
         <img src="../img/{{ member.imagebw }}" alt="" class="img-fluid mb-4">
-        <h1>{{ name }}</h1>
+        <h1 class="name">{{ name }}</h1>
         <p class="bio">{{ description | safe }}</p>
       </div>
     </div>
