@@ -14,6 +14,11 @@
       "fileId": "1egXwuQUtr-AtQI5V_izzANkJqvv3INJwJg2ZL2IZI78",
       "type": "sheet",
       "name": "data"
+    },
+    {
+      "fileId": "1egXwuQUtr-AtQI5V_izzANkJqvv3INJwJg2ZL2IZI78",
+    "type": "sheet",
+    "name": "albums"
     }
   ],
   "to_bake": [
@@ -30,6 +35,13 @@
       "array": "members",
       "slug": "slug",
       "path": "members"
+    },
+    {
+      "template": "bake-discography",
+      "data": "albums",
+      "array": "discography",
+      "slug": "title",
+      "path": "discography"
     }
   ]
 }

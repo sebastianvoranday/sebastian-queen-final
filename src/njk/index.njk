@@ -12,28 +12,34 @@
   <p>Here are the most important band members of Queen!</p>
   <div class="row">
     {% for member in members.members %}
-    <div class="col-md-8 offset-md-2">
-      <div class="col-sm-8 col-md-9 col-lg-10">
-        <div class="card mb-4 bg-light border-dark">
-          <div class="card-body">
-            <h5 class="card-title">{{ member.name }}
-            <h6 class="card-date">{{ member.tenure }}
-              <img src="../img/{{ member.imagebw }}" alt="{{ member.name }}" style="float:left;width:250x;height:300px;">
-            <a href="members/{{ member.slug }}.html" class="link" target="_blank">Read 
-            More</a>
-          </div>
+    <div class="col-sm-4 offset-md-1">
+      <div class="card mb-4 bg-light border-dark">
+        <div class="card-body">
+          <h5 class="card-title">{{ member.name }}
+          <h6 class="card-date">{{ member.tenure }}
+            <img class="img-fluid" src="../img/{{ member.imagebw }}" alt="{{ member.name }}">
+          <a href="members/{{ member.slug }}.html" class="link" target="_blank">Read More</a>
         </div>
       </div>
     </div>
       {% endfor %}
   </div>
-  <h2>Bookstores loop</h2>
-  <p>This loops through data that came from a Google Sheet example.</p>
+  <h2>Queen's best and most important albums</h2>
+  <p>Fact about their albums here</p>
   <hr>
-  {% for store in bookstores.stores %}
-    <h3><a href="{{ store.url }}" target="_blank">{{ store.name }}</a></h3>
-    <p>{{ store.address}}, {{ store.city }}, {{ store.state }} {{ store.zip }}</p>
-    <hr>
-  {% endfor %}
+  <div class="row">
+    {% for album in albums.discography %}
+    <div class="col-sm-4 offset-md-1">
+      <div class="card mb-4 bg-light border-dark">
+        <div class="card-body">
+          <h5 class="card-title">{{ album.title }}
+          <h6 class="card-date">{{ album.year }}
+            <img class="img-fluid" src="../img/{{ album.image }}" alt="{{ album.title }}">
+          <a href="discography/{{ album.title }}.html" class="link" target="_blank">Expand</a>
+        </div>
+      </div>
+    </div>
+      {% endfor %}
+  </div>
 </div>
 {% endblock %}

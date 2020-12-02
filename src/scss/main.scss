@@ -10,6 +10,8 @@
 // Option A: Include all of Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+
+
 // Option B: Include parts of Bootstrap
 // See https://getbootstrap.com/docs/4.1/getting-started/theming/#importing
 
@@ -23,4 +25,9 @@
 
 h3 {
   font-size: 1.5rem;
+}
+
+jumbotron {
+  background: url(../img/queen-band-wallpaper-thin.jpg) no-repeat center;
+  background-size: cover;
 }

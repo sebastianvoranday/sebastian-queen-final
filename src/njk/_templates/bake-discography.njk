@@ -1,0 +1,21 @@
+{% extends '_templates/base.njk' %}
+{% set relative_path = "../" %}
+{% from '_macros/prose.njk' import prose %}
+
+{% block page_title %}Queen | {{ title }}{% endblock %}
+
+{% block page_description %}{{ title }} {% endblock %}
+
+{% block content %}
+  <article class="container">
+    <div class="row">
+      <div class="col-sm-6 offset-md-4">
+        <h1 class="album">{{ title }}</h1>
+        <img class="img-fluid" src="../img/{{ image }}" alt="{{ member.name }}">
+        <p class="byline"><b> Album Title: </b><i> {{ title }} </i><br>
+        <span><b>Release Year:</b><i> {{ year }} </i></span></p>
+        <hr class="d-sm-none">
+      </div>
+    </div>
+  </article>
+{% endblock %}
