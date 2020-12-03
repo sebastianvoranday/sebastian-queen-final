@@ -7,9 +7,13 @@
 {% block content %}
 <div class="container">
   <h1>Queen: The British Band that Rocked the World</h1>
-  <p>Give description of the band right here</p>
+  <div class="intros">
+    <p>Give description of the band right here</p>
+  </div>
   <h2>Band Members</h2>
-  <p>Here are the most important band members of Queen!</p>
+  <div class="intros">
+    <p>Here are the most important band members of Queen!</p>
+  </div>
   <div class="row">
     {% for member in members.members %}
     <div class="col-sm-4 offset-md-.5">
@@ -25,7 +29,9 @@
       {% endfor %}
   </div>
   <h2>Albums</h2>
-  <p>Fact about their albums here</p>
+  <div class="intros">
+    <p>Fact about their albums here</p>
+  </div>
   <hr>
   <div class="row">
     {% for album in albums.discography %}

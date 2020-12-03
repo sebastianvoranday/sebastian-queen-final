@@ -23,6 +23,8 @@
 // Import partials
 @import "nav";
 
+@import "jumbotron";
+
 h3 {
   font-size: 1.5rem;
 }
@@ -30,10 +32,28 @@ h3 {
 h1 {
   color: blueviolet;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 h2 {
   color: orange;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
+.row {
+  margin-top: auto;
+}
+
+.link {
+  color: orangered;
+  margin-bottom: 10px;
+}
+
+.drow {
+  text-align: center;
+}
+
+.intros {
+  text-align: center;
+}
