@@ -30,7 +30,7 @@ h3 {
 }
 
 h1 {
-  color: blueviolet;
+  color: orange;
   text-align: center;
   font-family: 'Poppins', sans-serif;
 }
@@ -46,8 +46,7 @@ h2 {
 }
 
 .link {
-  color: orangered;
-  margin-bottom: 10px;
+  color: blueviolet;
 }
 
 .drow {
@@ -56,4 +55,24 @@ h2 {
 
 .intros {
   text-align: center;
+  color: blueviolet;
+  font-family: 'Texturina', serif;
+}
+
+.card-body {
+  color: blueviolet;
+  font-family: 'Texturina', serif;
+}
+
+.img-fluid {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.member-info {
+  font-family: 'Texturina', serif;
+}
+
+.bios {
+  font-family: 'Texturina', serif;
 }

@@ -8,16 +8,17 @@
 <div class="container">
   <h1>Queen: The British Band that Rocked the World</h1>
   <div class="intros">
-    <p>Give description of the band right here</p>
+    <span><p><b>Formed in 1970, Queen took the world by storm. Led by iconic frontman Freddie Mercury, members Brian May, Roger Taylor and John Deacon participated as part of what many consider to be the only "real" lineup for the legendary rock band.</b></p></span>
+    <span><p><b>Within seven years, Queen cemented itself in history with timeless classics that have been used in every medium possible. Even for those youngsters who do not know who "Queen" is, they find themselves stomping their feet and clapping their hands to the unmistakable "We Will Rock You." Their long lasting impact is even evident among Gen Z college students, with professors assigning final projects all about the band and its accomplishments. When completing these projects, students undoubtedly feel as though they are the champions.</b></p></span>
   </div>
   <h2>Band Members</h2>
   <div class="intros">
-    <p>Here are the most important band members of Queen!</p>
+    <p><b>Here are the most important band members of Queen!</b></p>
   </div>
   <div class="row">
     {% for member in members.members %}
-    <div class="col-sm-4 offset-md-.5">
-      <div class="card mb-4 bg-light border-dark">
+    <div class="col-sm-4">
+      <div class="card mb-4 bg-warning border-dark">
         <div class="card-body">
           <h5 class="card-title">{{ member.name }}
           <h6 class="card-date">{{ member.tenure }}
@@ -30,18 +31,17 @@
   </div>
   <h2>Albums</h2>
   <div class="intros">
-    <p>Fact about their albums here</p>
+    <p><b>Below you will see 15 of the main and most important Queen albums. Their work remains some of the best-selling of all time, with some estimates of their sales even up to 300 million records.</b></p>
   </div>
   <hr>
   <div class="row">
     {% for album in albums.discography %}
-    <div class="col-sm-4 offset-md-.5">
-      <div class="card mb-4 bg-light border-dark">
+    <div class="col-sm-4">
+      <div class="card mb-4 bg-warning border-dark">
         <div class="card-body">
           <h5 class="card-title">{{ album.title }}
           <h6 class="card-date">{{ album.year }}
-            <img class="img-fluid" src="img/{{ album.image }}" alt="{{ album.title }}">
-          <a href="discography/{{ album.title }}.html" class="link" target="_blank">Expand</a>
+            <img class="img-fluid" src="../img/{{ album.image }}" alt="{{ album.title }}">
         </div>
       </div>
     </div>

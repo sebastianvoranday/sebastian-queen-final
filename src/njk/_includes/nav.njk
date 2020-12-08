@@ -15,14 +15,11 @@
           {% endfor %}
         </div>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Studio Albums
+      <li class="nav-item">
+        <a class="nav-link" href="#" role="button">
+          Tour 2021
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          {% for album in albums.discography %}
-          <a class="dropdown-item" href="discography/{{ album.title }}.html">{{ album.title }}</a>
-          {% endfor %}
       </li>
     </ul>
   </div>
